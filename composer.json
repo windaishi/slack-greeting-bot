@@ -1,0 +1,14 @@
+{
+    "name": "manuelkress/slack-greeting-bot",
+    "type": "project",
+    "require": {
+        "symfony/dotenv": "^5.0"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Manuel Kress",
+            "email": "6232639+windaishi@users.noreply.github.com"
+        }
+    ]
+}
