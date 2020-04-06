@@ -3,8 +3,11 @@ use Symfony\Component\Dotenv\Dotenv;
 
 require 'vendor/autoload.php';
 
-$dotEnv = new Dotenv();
-$dotEnv->load(__DIR__.'/.env');
+$dotEntFilePath = __DIR__.'/.env';
+if (file_exists($dotEntFilePath)) {
+    $dotEnv = new Dotenv();
+    $dotEnv->load(__DIR__.'/.env');
+}
 
 $requestData = json_decode(file_get_contents('php://input'), true);
 
